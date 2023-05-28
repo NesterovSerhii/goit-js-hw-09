@@ -34,10 +34,10 @@ function onPromiseCreate(event) {
     
     createPromise(i, promiseDelay)
     .then(({ position, delay }) => {
-      Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
+      Notiflix.Notify.success(`✅ Fulfilled promise ${position + 1} in ${delay}ms`);
     })
     .catch(({ position, delay }) => {
-      Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
+      Notiflix.Notify.failure(`❌ Rejected promise ${position + 1} in ${delay}ms`);
     });
   }
 }
