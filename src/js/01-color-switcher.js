@@ -4,7 +4,7 @@
     body: document.querySelector('body'),
 }
 
-intervalId = null;
+let intervalId = null;
 refs.stopBtnEl.disabled = true;
 const DELAY = 1000;
 
