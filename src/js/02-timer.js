@@ -15,6 +15,7 @@ let selectedDate = null;
 let currentDate = new Date().getTime();
 let intervalId = null;
 
+refs.startBtn.disabled = true;
 refs.startBtn.addEventListener('click', startTimer);
 
 const options = {
@@ -52,6 +53,7 @@ function startTimer() {
     }
   }, 1000);
   refs.startBtn.disabled = true;
+  refs.input.disabled = true;
 }
 
 function convertMs(ms) {

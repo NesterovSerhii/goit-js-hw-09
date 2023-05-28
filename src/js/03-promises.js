@@ -40,4 +40,5 @@ function onPromiseCreate(event) {
       Notiflix.Notify.failure(`❌ Rejected promise ${position + 1} in ${delay}ms`);
     });
   }
+  refs.form.reset();
 }
